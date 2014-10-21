@@ -1,0 +1,3 @@
+create 'record', {NAME => 'user', REPLICATION_SCOPE => 1}
+exit
+

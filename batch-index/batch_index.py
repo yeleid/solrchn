@@ -4,7 +4,7 @@ import sys
 import getopt
 
 usage = """
-Usage: batch_index.sh
+Usage: batch_index.py
      -h                        Display this usage message
      -c collection_name        Name of the collection
      -n namenode_host          Namenode host
@@ -34,7 +34,8 @@ if name is None or hdfs_host is None or zk_host is None:
 
 
 print "Parameter List:"
-print "  Collection Name      : {0}".format(name)
+print "  Collection Name : {0}".format(name)
+print "  Zk Host         : {0}".format(zk_host)
 
 from subprocess import call
 print
